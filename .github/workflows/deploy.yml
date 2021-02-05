@@ -11,16 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Update NodeJS
-        run: sudo apt-get update && sudo apt-get install nodejs
+      - uses: actions/setup-node@v2
+          with:
+            node-version: '12'
       - name: Install Hugo
         run: sudo apt-get install hugo
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build
+      - run: npm install
+      - run: npm run build
       - name: Deploy
         run: |
           git clone https://github.com/noamzaks/noamzaks.github.io
