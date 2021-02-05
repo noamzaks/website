@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "15"
       - name: Install Hugo
         run: sudo apt-get install hugo
       - uses: borales/actions-yarn@v2.0.0
