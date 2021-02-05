@@ -5,9 +5,11 @@
         <h1 class="text-4xl text-center my-3">{{ replace (title .Title) "-" " " }}</h1>
     {{ end }}
     
+    {{ .Content }}
+
     {{ range .Pages }}
-        <article class="text-center mb-2">
-            <div class="inline-block p-4 bg-gray-200 rounded-xl mx-auto shadow-lg">
+        <article class="text-center my-10">
+            <div class="inline-block p-4 bg-gray-200 rounded-xl mx-auto shadow-lg transition duration-500 transform hover:scale-105 hover:shadow-2xl">
                 <h1 class="text-xl mb-3 text-blue-500"><a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a></h1>
                 <p>
                     {{ .RenderString .Description }}
