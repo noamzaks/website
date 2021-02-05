@@ -28,3 +28,5 @@ jobs:
           git remote set-url origin "https://noamzaks:${ACCESS_TOKEN}@github.com/noamzaks/noamzaks.github.io"
           git commit -m "Deployed recent updates from https://github.com/noamzaks/website"
           git push
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
