@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Hugo
+        run: sudo apt-get install hugo
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build
+      - name: Deploy
+        run: |
+          git clone https://github.com/noamzaks/noamzaks.github.io
+          cd noamzaks.github.io
+          rm -rf *
+          mv ../public/* .
+          git config user.name "Deploy Bot"
+          git config user.email "action@github.com"
+          git add .
+          git remote set-url origin "https://noamzaks:${GITHUB_TOKEN}@github.com/noamzaks/noamzaks.github.io"
+          git commit -m "Deployed recent updates from https://github.com/noamzaks/website"
+          git push
