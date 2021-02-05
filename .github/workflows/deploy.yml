@@ -14,8 +14,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
-      - name: Install Hugo
-        run: sudo apt-get install hugo
       - run: npm install
       - run: npm run build
       - name: Deploy
