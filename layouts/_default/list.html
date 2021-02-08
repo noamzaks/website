@@ -1,5 +1,6 @@
 {{ define "head-extra" }}
     <title>{{ .Site.Title }} | Browse {{ replace (title .Title) "-" " " }}</title>
+    <meta name="description" content="{{ .Params.ogDescription }}">
 {{ end }}
 
 {{ define "main" }}
