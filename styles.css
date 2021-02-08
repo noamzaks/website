@@ -19,3 +19,7 @@
 pre {
     @apply rounded-lg p-4 my-2 overflow-x-auto max-w-full;
 }
+
+mjx-container {
+    @apply outline-none;
+}
