@@ -17,7 +17,7 @@ First, a (few) quick demo(s) to understand:
 These demos all share a single codebase which creates an animation given the input. You only need to change the `values` array. The code uses brute force to calculate the solution (which we will in the proof's animation), at a rate of around factorial twice of the row count. It means about $ 3!! = 6! = 720 $ options for $ 3 $ but it ramps up _pretty quickly_ as $ 4!! = 24! > 10 ^ {23} $.
 
 ```python
-from manimlib.imports import *
+from manim import *
 import itertools
 
 

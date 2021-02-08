@@ -22,7 +22,7 @@ Here's an animation of an example, alongside the code:
 {{< video "RectangleExample" >}}
 
 ```python
-from manimlib.imports import *
+from manim import *
 
 class Example(Scene):
     def construct(self):
@@ -91,7 +91,7 @@ Here's a fun animation (got you surprised this time, didn't I?) to demonstrate:
 {{< video "RExample" >}}
 
 ```python
-from manimlib.imports import *
+from manim import *
 
 class Example(Scene):
     def construct(self):

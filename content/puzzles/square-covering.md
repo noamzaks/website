@@ -1,13 +1,13 @@
 ---
 title: Square Covering
-description: An odd number of $ n \times n $ squares is placed on an infinite grid, such that any two may overlap. Show that there are at least $ n^2 $ small $ 1 \times 1 $ grid squares that are covered by an odd number of squares.
-ogDescription: An odd number of n by n squares is placed on an infinite grid, such that any two may overlap. Show that there are at least n squared small 1 by 1 grid squares that are covered by an odd number of squares.
+description: An odd number of $ n \times n $ squares is placed on the integer points of an infinite grid, such that any two may overlap. Show that there are at least $ n^2 $ small $ 1 \times 1 $ grid squares that are covered by an odd number of squares.
+ogDescription: An odd number of n by n squares is placed on the integer points of an infinite grid, such that any two may overlap. Show that there are at least n squared small 1 by 1 grid squares that are covered by an odd number of squares.
 date: 2020-12-28T11:09:28+02:00
 tags: [parity, coloring]
 draft: false
 ---
 
-An odd number of $ n \times n $ squares is placed on an infinite grid, such that any two may overlap. Show that there are at least $ n^2 $ small $ 1 \times 1 $ grid squares that are covered by an odd number of squares.
+An odd number of $ n \times n $ squares is placed on the integer points of an infinite grid, such that any two may overlap. Show that there are at least $ n^2 $ small $ 1 \times 1 $ grid squares that are covered by an odd number of squares.
 
 First, let's create an animations showing this for $ n = 3 $:
 {{< video "Example" >}}
@@ -15,7 +15,7 @@ First, let's create an animations showing this for $ n = 3 $:
 The code looks like so:
 
 ```python
-from manimlib.imports import *
+from manim import *
 
 class Example(Scene):
     def construct(self):
@@ -79,7 +79,7 @@ Now let's code an animation demonstrating this solution for $ n = 3 $.
 The code for the above:
 
 ```python
-from manimlib.imports import *
+from manim import *
 
 class Solution(Scene):
     def construct(self):
