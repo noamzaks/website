@@ -2,3 +2,9 @@ node_modules
 public
 resources
 static/styles.css
+
+code/__pycache__
+code/media
+
+.DS_Store
+yarn-error.log

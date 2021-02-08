@@ -1,33 +1,3 @@
----
-title: "Stacking Game"
-description: You have $ n $ boxes organized in a circle, where each box contains a ball. You are only allowed to move two balls to adjacent boxes in opposite directions (clockwise and counter-clockwise). Given $ n $, determine if you can move all the balls to a single box.
-date: 2021-02-04T00:20:28+02:00
-tags: [invariance, modulus]
-draft: false
----
-
-You have $ n $ boxes organized in a circle, where each box contains a ball. You are only allowed to move two balls to adjacent boxes in opposite directions (clockwise and counter-clockwise). Given $ n $, determine if you can move all the balls to a single box.
-
-## Solution
-
-Let us take a closer look at $ n = 2 $. 
-
-{{< video "Two" >}}
-
-Sadly, we are stuck! 
-How about $ n = 3 $?
-
-{{< video "Three" >}}
-
-Hurray. After you think about it for a bit, you might indeed try to do the same for all odd $n$'s, for example:
-
-{{< video "Seven" >}}
-
-Here's another somewhat pleasing visual for $ n = 13 $:
-{{< video "ThirteenFast" >}}
-
-Here's the code
-```python
 from typing import List
 from manim import *
 
@@ -150,4 +120,3 @@ class Odd(Scene):
                     )
                 )
         self.play(*animations)
-```
