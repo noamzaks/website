@@ -1,3 +1,7 @@
+{{ define "head-extra" }}
+    <title>{{ .Site.Title }} | Browse {{ replace (title .Title) "-" " " }}</title>
+{{ end }}
+
 {{ define "main" }}
     {{ if in .Permalink "tags" }}
         <h1 class="text-4xl text-center my-3">Tagged with <span class="text-blue-500">{{ replace .Title "-" " " }}</span></h1>

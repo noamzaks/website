@@ -1,6 +1,10 @@
+{{ define "head-extra" }}
+    <title>{{ .Site.Title }}</title>
+{{ end }}
+
 {{ define "main" }}
     <div class="text-center">
-        <h1 class="text-5xl my-3">Noam Zaks</h1>
+        <h1 class="text-5xl my-3">{{ .Site.Title }}</h1>
         <p class="text-lg">Welcome to my website!</p>
         <p class="text-lg">As you might have noticed, my name is Noam Zaks.</p>
         <p class="text-lg">This website is mainly for fun and sharing neat things.</p>

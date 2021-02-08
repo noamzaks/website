@@ -1,3 +1,8 @@
+{{ define "head-extra" }}
+    <title>{{ .Site.Title }} | {{ .Title }}</title>
+    <meta name="description" content="{{ .Params.ogDescription }}">
+{{ end }}
+
 {{ define "main" }}
     <article class="bg-gray-200 rounded-xl mt-3 p-4 shadow-xl">
         <div class="text-center">

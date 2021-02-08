@@ -1,6 +1,7 @@
 ---
 title: Matrix Reordering
 description: Given a matrix of size $ m \times n $ which contains numbers from $ 1 $ to $ n $ and each number appears exactly $ m $ times, show that one can reorder the numbers inside each column such that the resulting matrix would have the numbers $ 1 $ to $ n $ in every line.
+ogDescription: Given an m by n matrix which contains numbers from 1 to n and each number appears exactly m times, show that one can reorder the numbers inside each column such that the resulting matrix would have the numbers 1 to n in every line.
 date: 2021-01-01T16:00:28+02:00
 tags: [graph-theory]
 draft: false
