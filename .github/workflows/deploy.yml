@@ -22,8 +22,6 @@ jobs:
           cd noamzaks.github.io
           rm -rf *
           mv ../public/* .
-          git config user.name "Deploy Bot"
-          git config user.email "action@github.com"
           echo "noamzaks.tech" > CNAME
           git add .
           git remote set-url origin "https://noamzaks:${ACCESS_TOKEN}@github.com/noamzaks/noamzaks.github.io"
