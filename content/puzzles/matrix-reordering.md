@@ -167,7 +167,7 @@ class Example(Scene):
 
 To be continued when I have time. Happy new year!
 
-### Notes
+## Notes
 - For some reason the `find_solution` method does not find a solution for following values. If you find some explanation, please let me know!
 
 ```python

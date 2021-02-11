@@ -9,7 +9,7 @@ draft: false
 
 This page contains variations of the [square covering parity](../square-covering-parity) riddle. You should read it before continuing.
 
-### Rectangles
+## Rectangles
 There are a few things that the proof did not require (hence we can generalize it). 
 For example, we never _really_ used the fact that we are describing square.
 The riddle can be easily described for rectangles:
@@ -77,7 +77,7 @@ class Example(Scene):
 
 The solution directly follows.
 
-### $ \mathbb R $
+## $ \mathbb R $
 
 An interesting follow-up to the original question shows we can find the same bound for the area covered if we can place our rectangles (or squares) anywhere on the grid.
 Here's the question:

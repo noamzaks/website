@@ -1,7 +1,7 @@
 ---
 title: "Ant Meeting"
 description: Assume you have $ n $ ants located at some points $ x_n $ along the number line. At each step, two of the $ n $ ants are chosen to meet each other and they both travel to the middle between them, e.g. $ x_1, x_2 \longrightarrow \frac{x_1 + x_2}{2}, \frac{x_1 + x_2}{2} $. You may even take $ \infty $ steps. What is the maximum total distance which can be achieved?
-ogDescription: Assume you have n ants located at some points along the number line. At each step, two of the n ants are chosen to meet each other and they both travel to the middle between them, e.g. x1, x2 -> (x_1 + x_2)/2, (x_1 + x_2)/2 $. You may even take an infinite amount of steps. What is the maximum total distance which can be achieved?
+ogDescription: Assume you have n ants located at some points along the number line. At each step, two of the n ants are chosen to meet each other and they both travel to the middle between them, e.g. x1, x2 -> (x_1 + x_2)/2, (x_1 + x_2)/2. You may even take an infinite amount of steps. What is the maximum total distance which can be achieved?
 date: 2021-02-08T16:52:57+02:00
 tags: [invariance, infinity]
 draft: false
