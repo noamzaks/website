@@ -23,7 +23,7 @@
                     {{ .RenderString .Description }}
                 </p>
                 {{ if isset .Params "preview" }}
-                    <video autoplay loop src="/videos/{{ .File.BaseFileName }}/{{ .Params.preview }}.mp4" class="rounded-xl my-3 outline-none"></video>
+                    <video autoplay loop muted playsinline src="/videos/{{ .File.BaseFileName }}/{{ .Params.preview }}.mp4" class="rounded-xl my-3 outline-none"></video>
                 {{ end }}
             </div>
         </article>
