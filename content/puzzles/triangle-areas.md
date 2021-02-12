@@ -4,6 +4,7 @@ description: Given a group $ S $ of points $ (x,y) \in \mathbb R ^ 2 $ such that
 ogDescription: Given a group S of points (x,y) in the plane such that every three points in S form a triangle (aren't collinear) of area at most 1, show that there is some triangle with area at most 2 which bounds S.
 date: 2021-02-11T16:24:22+02:00
 tags: [area, min-max]
+preview: "Example1"
 draft: false
 ---
 

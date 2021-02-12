@@ -4,6 +4,7 @@ description: An odd number of $ n \times n $ squares is placed on the integer po
 ogDescription: An odd number of n by n squares is placed on the integer points of an infinite grid, such that any two may overlap. Show that there are at least n squared small 1 by 1 grid squares that are covered by an odd number of squares.
 date: 2020-12-28T11:09:28+02:00
 tags: [parity, coloring]
+preview: "Example"
 draft: false
 ---
 

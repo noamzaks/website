@@ -4,6 +4,7 @@ description: An odd number of $ m \times n $ rectangles is placed on an infinite
 ogDescription: An odd number of m by n rectangles is placed on an infinite grid, such that any two may overlap. Show that there are at least mn small 1 by 1 grid squares that are covered by an odd number of rectangles.
 date: 2020-12-28T11:09:28+02:00
 tags: [parity, coloring, infinity]
+preview: "RExample"
 draft: false
 ---
 
