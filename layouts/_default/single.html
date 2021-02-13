@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-    <article class="bg-gray-200 rounded-xl my-3 p-4 shadow-xl">
+    <article class="p-4 my-3 bg-gray-200 shadow-xl rounded-xl">
         <div class="text-center">
             <h1 class="text-3xl">
                 {{ .Title }}
@@ -12,16 +12,16 @@
             <h1 class="text-lg text-gray-500">{{ .Date.Format "January 2, 2006" }}</h1>
             <div id="tags" class="mt-2">
                 {{ range (.GetTerms "tags") }}
-                    <a class="inline-block px-2 py-1 rounded-full mx-1 bg-blue-200 hover:bg-blue-300 hover:scale-110 transition duration-200 transform" href="{{ .Permalink }}">{{ replace (title .LinkTitle) "-" " " }}</a>
+                    <a class="inline-block px-2 py-1 mx-1 mb-2 bg-blue-200 rounded-full hover:bg-blue-300 hover:scale-110 transition duration-200 transform" href="{{ .Permalink }}">{{ replace (title .LinkTitle) "-" " " }}</a>
                 {{ end }}
             </div>
         </div>
         {{ .Content }}
 
         <div id="categories" class="text-center">
-            <a class="inline-block px-2 py-1 rounded-full mx-1 text-gray-700 hover:scale-110 transition duration-200 transform" href="/{{ .File.Dir }}">View all {{ replace .File.Dir "/" "" }}</a>
+            <a class="inline-block px-2 py-1 mx-1 text-gray-700 rounded-full hover:scale-110 transition duration-200 transform" href="/{{ .File.Dir }}">View all {{ replace .File.Dir "/" "" }}</a>
             {{ range (.GetTerms "categories") }}
-                <a class="inline-block px-2 py-1 rounded-full mx-1 text-gray-700 hover:scale-110 transition duration-200 transform" href="{{ .Permalink }}">View all {{ replace .LinkTitle "-" " " }}</a>
+                <a class="inline-block px-2 py-1 mx-1 text-gray-700 rounded-full hover:scale-110 transition duration-200 transform" href="{{ .Permalink }}">View all {{ replace .LinkTitle "-" " " }}</a>
             {{ end }}
         </div>
     </article>

@@ -4,6 +4,7 @@ description: Given a set of pairwise-disjoint intervals (such that the intersect
 ogDescription: Given a set of pairwise-disjoint intervals (such that the intersection of every pair is empty ) in [0, 1], assuming the total length is greater than 1/2, show there are two points a,b in the union of the segments such that |a-b| = 1/10.
 date: 2021-02-12T13:41:10+02:00
 preview: "Example1"
+tags: [measure, fractions]
 draft: false
 ---
 

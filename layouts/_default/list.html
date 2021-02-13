@@ -16,9 +16,14 @@
 
     {{ range .Pages }}
         <article class="my-10 text-center md:mx-20">
-            <div class="inline-block p-4 mx-auto bg-gray-200 shadow-lg cursor-pointer rounded-xl transition-none md:transition duration-500 transform-none md:transform hover:scale-105 md:hover:shadow-2xl" onclick="location.href = '{{ .Permalink }}'">
+            <div class="inline-block p-4 mx-auto bg-gray-200 shadow-lg cursor-pointer rounded-xl transition-none md:transition md:duration-500 transform-none md:transform hover:scale-105 md:hover:shadow-2xl" onclick="location.href = '{{ .Permalink }}'">
                 <h1 class="text-3xl text-blue-500">{{ .Title }}</h1>
                 <h3 class="mb-3 text-xl text-center text-gray-500">{{ .Date.Format "January 2, 2006" }}</h3>
+                <div id="tags" class="mt-2">
+                    {{ range (.GetTerms "tags") }}
+                        <a class="inline-block px-2 py-1 mx-1 mb-2 bg-blue-200 rounded-full hover:bg-blue-300 hover:scale-110 transition duration-200 transform" href="{{ .Permalink }}">{{ replace (title .LinkTitle) "-" " " }}</a>
+                    {{ end }}
+                </div>
                 <p>
                     {{ .RenderString .Description }}
                 </p>
