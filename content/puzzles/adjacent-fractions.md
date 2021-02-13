@@ -5,7 +5,7 @@ ogDescription: "We look at all of the rational numbers in (0, 1] whose denominat
 date: 2021-02-13T11:49:57+02:00
 preview: "FourExample"
 tags: [integer-grid, fractions, number-theory]
-draft: true
+draft: false
 ---
 
 We look at all of the rational numbers in $ (0, 1] $ whose denominator is smaller than some $ n \in \mathbb N $. Prove that for any two adjacent numbers $ \frac {p_i} {q_i}, \frac {p_{i+1}} {q_{i+1}} $ the following holds: $ p_{i+1} q_i - p_i q_{i+1} = 1 $.
