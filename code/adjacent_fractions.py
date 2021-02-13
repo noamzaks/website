@@ -115,6 +115,6 @@ class AdjacentFractionsSolution(Scene):
         self.play(
             Transform(
                 triangle.copy(),
-                MathTex(f"S = ad - bc = " + r"\frac 1 2").shift(3 * RIGHT + DOWN),
+                MathTex(r"S = \frac {ad - bc} 2 = \frac 1 2").shift(3 * RIGHT + DOWN),
             )
         )
