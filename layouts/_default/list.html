@@ -5,9 +5,9 @@
 
 {{ define "main" }}
     {{ if in .Permalink "tags" }}
-        <h1 class="text-4xl text-center my-3">Tagged with <span class="text-blue-500">{{ replace .Title "-" " " }}</span></h1>
+        <h1 class="my-3 text-4xl text-center">Tagged with <span class="text-blue-500">{{ replace .Title "-" " " }}</span></h1>
     {{ else }}
-        <h1 class="text-4xl text-center my-3">{{ replace (title .Title) "-" " " }}</h1>
+        <h1 class="my-3 text-4xl text-center">{{ replace (title .Title) "-" " " }}</h1>
     {{ end }}
     
     <div class="text-center">
@@ -15,15 +15,15 @@
     </div>
 
     {{ range .Pages }}
-        <article class="text-center my-10">
-            <div class="cursor-pointer inline-block p-4 bg-gray-200 rounded-xl mx-auto shadow-lg transition duration-500 transform hover:scale-105 hover:shadow-2xl" onclick="location.href = '{{ .Permalink }}'">
+        <article class="my-10 text-center md:mx-20">
+            <div class="inline-block p-4 mx-auto bg-gray-200 shadow-lg cursor-pointer rounded-xl transition-none md:transition duration-500 transform-none md:transform hover:scale-105 md:hover:shadow-2xl" onclick="location.href = '{{ .Permalink }}'">
                 <h1 class="text-3xl text-blue-500">{{ .Title }}</h1>
-                <h3 class="text-xl text-center mb-3 text-gray-500">{{ .Date.Format "January 2, 2006" }}</h3>
+                <h3 class="mb-3 text-xl text-center text-gray-500">{{ .Date.Format "January 2, 2006" }}</h3>
                 <p>
                     {{ .RenderString .Description }}
                 </p>
                 {{ if isset .Params "preview" }}
-                    <video autoplay loop muted playsinline src="/videos/{{ .File.BaseFileName }}/{{ .Params.preview }}.mp4" class="rounded-xl my-3 outline-none"></video>
+                    <video autoplay loop muted playsinline src="/videos/{{ .File.BaseFileName }}/{{ .Params.preview }}.mp4" class="my-3 outline-none rounded-xl"></video>
                 {{ end }}
             </div>
         </article>

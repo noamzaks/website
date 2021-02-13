@@ -120,7 +120,7 @@ This point's $ x $ value must be between $ p_i $ and $ p_{i+1} $, but by definit
 
 {{< video "Solution" >}}
 
-Hence the area is a half, but by simple algebraic calculations it is also equal to $ \frac 1 2 p_{i+1} q_i - p_i q_{i+1} $."
+Hence the area is a half, but by simple algebraic calculations it is also equal to $ \frac 1 2 p_{i+1} q_i - p_i q_{i+1} $.
 
 ```python
 from manim import *

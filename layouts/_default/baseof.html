@@ -4,9 +4,11 @@
         {{- partial "head.html" . -}}
         {{- block "head-extra" . }}{{- end }}
     </head>
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content" class="container mx-auto px-5 md:px-0">
+    <body class="flex flex-col h-screen">
+        <div class="flex-none w-full">
+            {{- partial "header.html" . -}}
+        </div>
+        <div id="content" class="container px-5 mx-auto overflow-y-auto md:px-0 w-100 pt-2">
             {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
