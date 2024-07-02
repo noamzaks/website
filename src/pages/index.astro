@@ -1,0 +1,27 @@
+---
+import Card from "../components/Card.astro";
+import Grid from "../components/Grid.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Home"
+    description="I'm Noam, an undergraduate at Tel Aviv University."
+>
+    <h1>Welcome to <span class="text-gradient">my website.</span></h1>
+    <p>I'm Noam, currently an undergraduate at Tel Aviv University.</p>
+    <Grid>
+        <Card
+            href="/projects"
+            title="Projects"
+            icon="fa-solid fa-lightbulb"
+            body="Some of my favorite projects."
+        />
+        <Card
+            href="https://github.com/noamzaks"
+            title="GitHub"
+            icon="fa-brands fa-github"
+            body="What I'm really doing, instead of studying."
+        />
+    </Grid>
+</Layout>

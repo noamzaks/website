@@ -1,0 +1,24 @@
+---
+import Card from "../../components/Card.astro";
+import Grid from "../../components/Grid.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = await Astro.glob("./*.md");
+---
+
+<Layout title="Projects" description="Some of my favorite projects.">
+    <h1>Projects</h1>
+    <p>Here are a few of my favorite projects.</p>
+    <Grid>
+        {
+            posts.map((post) => (
+                <Card
+                    href={post.url!}
+                    title={post.frontmatter.title}
+                    icon={post.frontmatter.icon}
+                    body={post.frontmatter.description}
+                />
+            ))
+        }
+    </Grid>
+</Layout>
