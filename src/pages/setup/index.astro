@@ -7,12 +7,11 @@ const posts = await Astro.glob("./*.md");
 ---
 
 <Layout
-    title="Projects"
-    description="Some of my favorite projects."
-    icon="fa-solid fa-lightbulb"
+    title="Setup"
+    description="My computer code development setup."
+    icon="fa-solid fa-laptop-code"
 >
-    <h1>Projects</h1>
-    <p>Here are a few of my favorite projects.</p>
+    <h1>Setup</h1>
     <Grid>
         {
             posts.map((post) => (

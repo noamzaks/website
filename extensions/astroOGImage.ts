@@ -45,6 +45,9 @@ export default function astroOGImage(): AstroIntegration {
                     let description = await data.match(
                         /<meta name="description" content="(.*?)">/
                     )[1];
+                    let icon = await data.match(
+                        /<meta name="thumbnail-icon" content="(.*?)">/
+                    )[1];
 
                     // Get the html
                     const html = fs
@@ -52,7 +55,8 @@ export default function astroOGImage(): AstroIntegration {
                         .toString()
                         .replace("@curdir", resolve("."))
                         .replace("@title", title.split(" | ")[0])
-                        .replace("@description", description);
+                        .replace("@description", description)
+                        .replace("@icon", icon);
 
                     const promise = browser.newPage().then(async (page) => {
                         await page.setContent(html);
