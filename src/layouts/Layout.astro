@@ -44,7 +44,7 @@ const { title, description, icon } = Astro.props?.frontmatter
         <meta
             property="og:image"
             itemprop="image"
-            content={Astro.site! +
+            content={Astro.site +
                 "thumbnails" +
                 Astro.url.pathname +
                 "thumbnail.png"}
@@ -55,6 +55,10 @@ const { title, description, icon } = Astro.props?.frontmatter
             integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
+        />
+        <link
+            rel="canonical"
+            href={Astro.site!.toString().slice(0, -1) + Astro.url.pathname}
         />
     </head>
     <body>

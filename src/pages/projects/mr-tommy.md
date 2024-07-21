@@ -5,7 +5,7 @@ icon: "fa-brands fa-python"
 description: "Rapid development of Motion Planning algorithms."
 ---
 
-# Code Battles
+# Mr. Tommy
 
 For the final project in the Algorithmic Robotics and Motion Planning course given in Tel Aviv University by Prof. Dan Halperin, I wanted to implement some motion planning algorithms, such as PRM, RRT, RRT*, dRRT, dRRT* and some techniques such as hybridization.
 

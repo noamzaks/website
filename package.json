@@ -5,10 +5,11 @@
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
-        "build": "astro check && astro build",
+        "build": "astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "publish": "bun run build && rm -rf ../noamzaks.github.io/* && cp -r dist/* ../noamzaks.github.io && cd ../noamzaks.github.io && git add . && git commit --amend -m 'initial commit' && git push --force"
+        "check": "astro check",
+        "publish": "bun run build && netlify deploy -d dist --site noamzaks --prod"
     },
     "dependencies": {
         "@astrojs/check": "^0.7.0",
