@@ -81,4 +81,4 @@ However, one cool project which gives you a lot of power you probably seek if yo
 
 You can use the getting started guide [here](https://docs.pyscript.net/latest/beginning-pyscript/).
 
-**Note:** Sadly, I don't think it can save you the hassle of web development. If you really hate web, you can have a look at my [code battles](../code-battles/) library which lets you create a cool event without writing JavaScript, but it's definitely not "general purpose".
+**Note:** Sadly, I don't think it can save you the hassle of web development. If you really hate web, you can have a look at my [code battles](../projects/code-battles/) library which lets you create a cool event without writing JavaScript, but it's definitely not "general purpose".
