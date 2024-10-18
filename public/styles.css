@@ -99,6 +99,15 @@ a:hover {
     background-position: 0%;
 }
 
+.heading-link {
+    margin-right: 0.25em;
+}
+
+/* Don't show a link for the first h1 of a given Markdown-rendered page as it's the title. */
+h1:first-child .heading-link {
+    display: none;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         background-color: #333;
