@@ -1,5 +1,6 @@
 {
-    "name": "",
+    "name": "website",
+    "private": true,
     "type": "module",
     "version": "0.0.1",
     "scripts": {
@@ -9,12 +10,12 @@
         "preview": "astro preview",
         "astro": "astro",
         "check": "astro check",
-        "publish": "bun run build && netlify deploy -d dist --site noamzaks --prod"
+        "deploy": "bun run build && netlify deploy -d dist --site noamzaks --prod"
     },
     "dependencies": {
-        "@astrojs/check": "^0.7.0",
-        "@astrojs/sitemap": "^3.1.6",
-        "astro": "^4.11.3",
+        "@astrojs/check": "0.9.4",
+        "@astrojs/sitemap": "3.2.1",
+        "astro": "4.16.6",
         "typescript": "^5.5.3"
     },
     "devDependencies": {
