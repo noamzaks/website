@@ -12,6 +12,7 @@ description: "My Windows code development setup."
 -   Don't show recently used files, frequently used folders or files from office.com in File Explorer and clear its history.
 -   Install the latest [Visual Studio](https://visualstudio.microsoft.com/downloads/) with "C++ Desktop Develeopment".
 -   Enable [Windows Developer Mode](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) (for symlinks).
+-   Enable [long paths](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/The-Windows-10-default-path-length-limitation-MAX-PATH-is-256-characters.html).
 -   Install the following applications using [winget](https://github.com/microsoft/winget-cli):
     -   Microsoft.VisualStudioCode
     -   Microsoft.WindowsTerminal
@@ -31,3 +32,4 @@ description: "My Windows code development setup."
     -   Rye
 -   Add LLVM to the PATH (`C:\Program Files\LLVM\bin`).
 -   Set up Ubuntu on WSL.
+-   Install [JetBrains Mono Nerd Font](https://www.nerdfonts.com/font-downloads).
