@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 
@@ -62,7 +62,7 @@ const { title, description, icon } = Astro.props?.frontmatter
             href={Astro.site!.toString().slice(0, -1) + Astro.url.pathname}
         />
 
-        <ViewTransitions />
+        <ClientRouter />
     </head>
     <body>
         <Header title={title} />
