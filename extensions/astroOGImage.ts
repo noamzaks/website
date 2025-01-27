@@ -62,7 +62,7 @@ export default function astroOGImage(): AstroIntegration {
                             height: 630,
                         });
 
-                        const split = f.split("/");
+                        const split = pathname.split("/");
                         const filename = split[split.length - 1];
                         const directoryPath = relative(
                             ".",
